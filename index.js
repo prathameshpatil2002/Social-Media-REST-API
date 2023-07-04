@@ -12,8 +12,7 @@ const postRoute = require('./routes/posts');
 dotenv.config();
 
 mongoose.connect(
-    //process.env.MONGO_URL
-    'mongodb://127.0.0.1:27017/test'
+    process.env.MONGO_URL
 );
 
 
